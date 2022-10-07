@@ -103,7 +103,14 @@ if(!isPackager){
         }
     }
     setTimeout(function() {
-        document.querySelector("#app > div > div > div > div.gui_menu-bar-position_3U1T0.menu-bar_menu-bar_JcuHF.box_box_2jjDp > div.menu-bar_main-menu_3wjWH > div.menu-bar_file-group_1_CHX").appendChild(plbtn);
+      var canvas = document.getElementById("app")
+      canvas = canvas.children[0]
+      canvas = canvas.children[0]
+      canvas = canvas.children[0]
+      canvas = canvas.children[1]
+      canvas = canvas.children[0]
+      canvas = canvas.children[0].appendChild(plbtn);
+        //document.querySelector("#app > div > div > div > div.gui_menu-bar-position_3U1T0.menu-bar_menu-bar_JcuHF.box_box_2jjDp > div.menu-bar_main-menu_3wjWH > div.menu-bar_file-group_1_CHX").appendChild(plbtn);
         plbtn.addEventListener('click', function(e) {
             document.querySelector(".plmenu").style.display = "block";
             document.querySelector(".plinput").value = "";
